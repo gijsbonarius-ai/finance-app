@@ -23,13 +23,10 @@ function save<T>(key: string, data: T[]): void {
 export const storage = {
   getTransactions: (): Transaction[] => load(KEYS.transactions),
   saveTransactions: (data: Transaction[]) => save(KEYS.transactions, data),
-
   getBudgets: (): BudgetEntry[] => load(KEYS.budgets),
   saveBudgets: (data: BudgetEntry[]) => save(KEYS.budgets, data),
-
   getAssets: (): Asset[] => load(KEYS.assets),
   saveAssets: (data: Asset[]) => save(KEYS.assets, data),
-
   getLiabilities: (): Liability[] => load(KEYS.liabilities),
   saveLiabilities: (data: Liability[]) => save(KEYS.liabilities, data),
 };

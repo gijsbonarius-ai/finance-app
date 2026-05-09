@@ -2,17 +2,17 @@ export type TransactionType = 'income' | 'expense';
 
 export interface Transaction {
   id: string;
-  date: string; // YYYY-MM-DD
+  date: string;
   type: TransactionType;
   category: string;
   description: string;
-  amount: number; // always positive
+  amount: number;
   person: 'joint' | 'me' | 'partner';
 }
 
 export interface BudgetEntry {
   id: string;
-  month: string; // YYYY-MM
+  month: string;
   category: string;
   budgetedAmount: number;
 }

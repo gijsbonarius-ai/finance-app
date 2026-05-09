@@ -127,8 +127,7 @@ export default function Transactions() {
                   </td>
                   <td style={{ padding: '12px 12px' }}>
                     <button onClick={() => remove(tx.id)} style={{
-                      border: 'none', background: 'none', cursor: 'pointer', color: '#d1d5db',
-                      padding: 4,
+                      border: 'none', background: 'none', cursor: 'pointer', color: '#d1d5db', padding: 4,
                     }}>
                       <Trash2 size={16} />
                     </button>
